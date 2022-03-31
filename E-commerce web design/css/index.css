@@ -1,4 +1,4 @@
-/*  header part start */
+/* ---------- Top part start 😄---------- */
 
 .topbar-wrapper {
     width: 100%;
@@ -143,3 +143,57 @@
 .shop-cart:hover .drop-cart {
     display: block;
 }
+
+
+/* ---------- Top part End 😄---------- */
+
+
+/* ---------- Header part Start 😄---------- */
+
+.header {
+    height: 100px;
+    /* background-color: pink; */
+}
+
+
+/* float for the .mi does not need the space and the .home can mouseover */
+
+.logo {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 55px;
+    height: 100px;
+}
+
+.mi,
+.home {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-color: #ff6700;
+}
+
+.mi {
+    background-image: url(../images/mi-logo.png);
+}
+
+.home {
+    display: block;
+    background-image: url(../images/mi-home.png);
+    margin-left: -55px;
+}
+
+.logo:hover .mi {
+    margin-left: 55px;
+}
+
+.logo:hover .home {
+    margin-left: 0;
+}
+
+
+/* ---------- Header part Start 😄---------- */
