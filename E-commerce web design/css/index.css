@@ -150,6 +150,10 @@
 
 /* ---------- Header part Start 😄---------- */
 
+.header-wrapper {
+    position: relative;
+}
+
 .header {
     height: 100px;
     /* background-color: pink; */
@@ -196,4 +200,54 @@
 }
 
 
-/* ---------- Header part Start 😄---------- */
+/* ---------- Middle navigation start 😄---------- */
+
+.nav-wrapper {
+    float: left;
+}
+
+.nav {
+    width: 850px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    font-size: 16px;
+    margin-left: 20px;
+    color: #333;
+}
+
+.nav li .all-goods {
+    /* hide but keep the space */
+    visibility: hidden;
+}
+
+.nav li a:hover {
+    color: #ff6700;
+}
+
+
+/* Popup part */
+
+.goods-info {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: pink;
+    border-top: 1px solid #ccc;
+}
+
+.nav li :hover~.goods-info {
+    height: 228px;
+}
+
+
+/* ---------- Header part End 😄---------- */
