@@ -25,3 +25,7 @@ a {
     color: #d0d0d0;
     cursor: pointer;
 }
+
+input {
+    outline: none;
+}
