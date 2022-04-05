@@ -43,6 +43,7 @@
     margin-left: -40px;
     /* change the height need to spend .3s */
     transition: height .3s;
+    z-index: 9999;
 }
 
 
@@ -204,7 +205,8 @@
 /* ---------- Middle navigation start 😄---------- */
 
 .nav-wrapper {
-    float: left;
+    position: relative;
+    /* float: left; */
 }
 
 .nav-wrapper.nav {
@@ -230,11 +232,11 @@
 .left-menu {
     position: absolute;
     top: 100px;
-    left: 340px;
+    left: 0;
     width: 234px;
     height: 460px;
     background-color: rgba(0, 0, 0, .6);
-    z-index: 999;
+    z-index: 99;
 }
 
 .left-menu .left-menu-side {
@@ -287,7 +289,7 @@
     height: 0px;
     transition: height .3s;
     background-color: #fff;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .nav .show-goods:hover~.goods-info,
@@ -306,7 +308,7 @@
 .search-wrapper {
     position: absolute;
     top: 25px;
-    right: 345px;
+    right: 0;
     width: 297px;
     height: 50px;
     line-height: 50px;
@@ -351,3 +353,83 @@
 
 
 /* ---------- Header part End 😄---------- */
+
+
+/* ---------- Banner part start 😄---------- */
+
+.banner-wrapper {
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    height: 460px;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 图片之间缝隙没有 */
+    vertical-align: top;
+}
+
+
+/* 设置pointer */
+
+.pointer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 14px 26px 0;
+}
+
+.pointer a {
+    float: left;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, .4);
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.pointer a:hover,
+.pointer a.active {
+    border: 2px solid rgba(0, 0, 0, .4);
+    background-color: rgba(255, 255, 255, .4);
+}
+
+
+/* sprites for arrow */
+
+.prev-next .prev,
+.prev-next .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 41px;
+    height: 69px;
+}
+
+.prev-next .prev {
+    left: 234px;
+    background: url(../images/icon-slides.png) -83px 0;
+}
+
+.prev-next .next {
+    right: 0px;
+    background: url(../images/icon-slides.png) -124px 0;
+}
+
+.prev-next .prev:hover {
+    background: url(../images/icon-slides.png) 0 0;
+}
+
+.prev-next .next:hover {
+    background: url(../images/icon-slides.png) -42px 0;
+}
+
+
+/* ---------- Banner part End 😄---------- */
