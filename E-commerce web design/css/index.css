@@ -120,11 +120,14 @@
 
 .shop-cart .drop-cart {
     display: none;
+    overflow: hidden;
+    position: absolute;
     width: 318px;
     height: 100px;
     background-color: #fff;
     margin-left: -196px;
     box-shadow: 0px 5px 10px rgba(49, 49, 49, 0.1);
+    z-index: 99999;
 }
 
 .shop-cart .drop-cart p {
@@ -359,6 +362,7 @@
 
 .banner-wrapper {
     position: relative;
+    margin-bottom: 15px;
 }
 
 .banner {
@@ -433,3 +437,112 @@
 
 
 /* ---------- Banner part End 😄---------- */
+
+
+/* ---------- right part start 😄---------- */
+
+.back-top {
+    position: fixed;
+    width: 26px;
+    height: 206px;
+    background-color: #fff;
+    top: 450px;
+    left: 50%;
+    margin-left: 613px;
+    cursor: pointer;
+}
+
+.back-top li {
+    width: 26px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 16px;
+    color: #999;
+}
+
+.back-top li:hover {
+    color: #ff6700;
+}
+
+
+/* ---------- right part end 😄---------- */
+
+
+/* ---------- ads part start 😄---------- */
+
+.advs {
+    height: 170px;
+}
+
+.advs .left-advs {
+    float: left;
+    width: 234px;
+    height: 100%;
+    background-color: #5f5750;
+}
+
+.advs .left-advs li {
+    float: left;
+    position: relative;
+    height: 82px;
+    background-color: #5f5750;
+    color: #cfccca;
+}
+
+.advs .left-advs li::before {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+}
+
+.advs .left-advs li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+}
+
+.advs .left-advs a {
+    display: block;
+    width: 76px;
+    height: 82px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.advs .left-advs i {
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.advs .left-advs a:hover {
+    color: #fff;
+}
+
+.advs .right-advs {
+    float: right;
+}
+
+.right-advs li {
+    float: right;
+    margin-right: 15px;
+    width: 316px;
+}
+
+.advs .right-advs li:last-child {
+    margin-right: 0;
+}
+
+.right-advs li img {
+    width: 316px;
+}
+
+
+/* ---------- ads part end 😄---------- */
