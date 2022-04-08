@@ -2,3 +2,41 @@
     width: 1200px;
     margin: 0 auto;
 }
+
+
+/* shortcut part start */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.shortcut {
+    height: 31px;
+    /* 里边的字就会居中 */
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+    /* 全给浮动 因为都要浮动 */
+    float: left;
+}
+
+.style_red {
+    color: #cb1623;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    /* 把 | 也算是li 直接一调整margin就会被挤下来 */
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+
+/* shortcut part end */
