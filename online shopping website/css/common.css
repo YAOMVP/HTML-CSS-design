@@ -40,3 +40,103 @@
 
 
 /* shortcut part end */
+
+
+/* header part start */
+
+.header {
+    position: relative;
+    height: 105px;
+    background-color: pink;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+    /* 必须是h1 需要搜索引擎优化 所以字号改成0就okl */
+}
+
+.header .logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    font-size: 0;
+    background: url(../images/signature.png) no-repeat;
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 346px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    /* 行内块元素 浮动就可以一行显示了 且无缝隙*/
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    /* 行内块元素 */
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin-left: 10px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.shopcar .cart_icon {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.cart_icon:nth-child(1) {
+    color: #b1191a;
+}
+
+.count {
+    /* 购物车的数量是不断往里边加的 所以不能给宽 */
+    /* 子绝父绝也 ok✌ */
+    position: absolute;
+    top: -5px;
+    /* 给left值会更符合中国人的购物车增加从左往右的习惯 */
+    left: 105px;
+    height: 14px;
+    /* 文字888会继承父盒子的行高 所以重新设置就ok了 */
+    line-height: 14px;
+    background-color: #e60012;
+    color: #fff;
+    border-radius: 7px 7px 7px 0;
+}
+
+
+/* header part end */

@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* C3 改padding值不会影响盒子 */
     box-sizing: border-box;
 }
 
@@ -52,6 +53,8 @@ a:hover {
 button,
 input {
     font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    /* 去掉边框 */
+    border: 0;
     /*取消轮廓线 蓝色的*/
     outline: none;
 }
