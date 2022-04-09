@@ -1,0 +1,39 @@
+.w {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    height: 28px;
+    line-height: 28px;
+    background-color: #FAFAFA;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut ul li a {
+    font-size: 12px;
+    font-family: Biennale, Helvetica, Arial, sans-serif;
+    vertical-align: middle;
+    font-weight: 400;
+    color: #737373;
+}
+
+.fr li {
+    margin-left: 28px;
+}
+
+.shortcut ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
