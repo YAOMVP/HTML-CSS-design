@@ -1,0 +1,47 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.shortcut {
+    height: 36px;
+    line-height: 36px;
+    background-color: #000;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut ul li:nth-child(even) {
+    width: 1px;
+    height: 14px;
+    background-color: #414141;
+    margin: 12px 8px 0;
+}
+
+.shortcut ul li a {
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.shopcar {
+    width: 93px;
+    height: 35px;
+    text-align: center;
+    background-color: #424242;
+    margin-left: 5px;
+}
+
+.shortcut ul li a:hover {
+    color: #fff;
+}
