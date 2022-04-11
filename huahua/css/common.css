@@ -1,3 +1,5 @@
+/* shortcut start  */
+
 .w {
     width: 1200px;
     margin: 0 auto;
@@ -45,3 +47,82 @@
 .shortcut ul li a:hover {
     color: #fff;
 }
+
+
+/* shortcut start  */
+
+
+/* header start  */
+
+.header {
+    position: relative;
+    height: 74px;
+    /* background-color: skyblue; */
+}
+
+.header .logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 107px;
+}
+
+.header .logo h1 {
+    font-size: 0;
+}
+
+.header .logo h1 a {
+    display: block;
+    width: 107px;
+    height: 64px;
+    background: url(../images/signature.png) no-repeat;
+}
+
+.hotwords {
+    position: absolute;
+    top: 10px;
+    left: 136px;
+}
+
+.hotwords ul li {
+    margin: 15px 0 0 40px;
+    float: left;
+}
+
+.hotwords ul li a {
+    font-size: 16px;
+    color: #000;
+}
+
+.hotwords ul li:hover a {
+    color: #C9102E;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 200px;
+    height: 74px;
+    border: 1px solid transparent;
+}
+
+.search button {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 30px;
+    color: #ccc;
+    background-color: #fff;
+}
+
+.search button:hover {
+    color: #666;
+}
+
+
+/* header end  */
