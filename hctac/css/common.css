@@ -123,56 +123,17 @@
     font-weight: 600;
     font-size: 14px;
     text-align: center;
-}
-
-.shopcart .hello {
-    width: 105px;
+    /* 字数不一样 不方便给宽 直接给padding把左右的值撑开 因为在base*中设置了： box-sizing: border-box; 所以也不用担心padding */
+    padding: 25px 20px 0;
 }
 
 .shopcart .hello a {
-    width: 105px;
-    line-height: 95px;
-}
-
-.shopcart .hello a .fas {
+    padding-top: 30px;
     font-size: 20PX;
 }
 
-.shopcart .OnePass {
-    width: 104px;
-}
-
-.shopcart .OnePass a {
-    width: 104px;
-    padding-top: 25px;
-}
-
-.shopcart .flybuys {
-    width: 108px;
-}
-
-.shopcart .flybuys a {
-    width: 108px;
-    padding-top: 25px;
-}
-
-.shopcart .heart {
-    width: 80px;
-}
-
-.shopcart .heart a {
-    width: 80px;
-    line-height: 95px;
-    font-size: 24px;
-}
-
-.shopcart .car {
-    width: 80px;
-}
-
+.shopcart .heart a,
 .shopcart .car a {
-    width: 80px;
-    line-height: 95px;
     font-size: 24px;
 }
 
