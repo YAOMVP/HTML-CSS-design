@@ -47,7 +47,7 @@
 .header {
     position: relative;
     height: 105px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .logo {
@@ -140,3 +140,80 @@
 
 
 /* header part end */
+
+
+/* navigation part start  */
+
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav .dropdown .dd {
+    width: 100%;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.dropdown .dd ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+}
+
+.dropdown .dd ul li::after {
+    /* 可以用定位直接定去了 after是孩子 li是父亲*/
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    content: ">";
+    font-size: 14px;
+    color: #fff;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #FFF;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #e60012;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    /*  字数不一样多就可以暂且不给宽度 用padding值撑开 这样前后就都可以点击了*/
+    padding: 0 20px;
+}
+
+
+/* navigation part end  */
