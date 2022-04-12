@@ -80,16 +80,19 @@
 
 .hotwords {
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 136px;
 }
 
 .hotwords ul li {
-    margin: 15px 0 0 40px;
     float: left;
 }
 
 .hotwords ul li a {
+    display: block;
+    height: 74px;
+    line-height: 74px;
+    padding: 0 20px;
     font-size: 16px;
     color: #000;
 }
