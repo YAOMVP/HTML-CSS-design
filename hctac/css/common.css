@@ -23,6 +23,10 @@
     float: left;
 }
 
+.style_red {
+    color: #FF5061;
+}
+
 .shortcut ul li a {
     font-size: 12px;
     font-family: Biennale, Helvetica, Arial, sans-serif;
@@ -145,3 +149,83 @@
 
 
 /* header part end */
+
+
+/* nav part start */
+
+.nav {
+    height: 48px;
+    background-color: #FAFAFA;
+    border-bottom: 2px solid #ddd;
+}
+
+.dropdown {
+    line-height: 48px;
+    font-size: 14px;
+}
+
+.dropdown .dt:hover+.dd {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.dropdown .dt {
+    width: 170px;
+    padding-left: 10px;
+    border-bottom: none;
+}
+
+.dropdown .dd {
+    width: 200px;
+    height: 482px;
+    border-top: none;
+}
+
+.dropdown .dd ul li {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-left: 4px solid transparent;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #FAFAFA;
+    border-left: 4px solid #0064E4;
+}
+
+.dropdown .dd ul li:hover::after {
+    content: '>';
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-weight: 900;
+    color: #000;
+}
+
+.dropdown .dd ul li i {
+    padding-left: 5px;
+    color: #222;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.navitems ul li a:hover {
+    border-bottom: 2px solid #737373;
+}
+
+.navitems ul li:nth-of-type(1) a:hover {
+    border-bottom: 2px solid #9900F1;
+}
+
+
+/* nav part end */
