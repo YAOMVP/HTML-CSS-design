@@ -1,0 +1,236 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    position: relative;
+    width: 721px;
+    height: 455px;
+}
+
+.arrow_l,
+.arrow_r {
+    position: absolute;
+    /* 没有给左边的值 右边箭头直接过去 */
+    top: 50%;
+    /* 垂直居中，先走50% 再走自己高度的一半 往上走是负值*/
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.arrow_l {
+    left: 5px;
+}
+
+.arrow_r {
+    right: 5px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    /* background-color: #fff; */
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.arrow_l:hover,
+.arrow_r:hover {
+    color: #e4e4e4;
+}
+
+.newsflash {
+    width: 250px;
+    height: 455px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news_hd a {
+    float: right;
+}
+
+.news_bd {
+    padding: 3px 10px 0;
+}
+
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    /* 浮动了之后一行放不下4个，就会被挤下去。可以给li的父亲ul设置一个宽度，这样就可以放下li了，最后一个li太大出来了，边框可以隐藏给ul的父亲overflow：hidden */
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li a {
+    text-align: center;
+}
+
+.lifeservice ul li a i {
+    display: block;
+    width: 24px;
+    height: 28px;
+    margin: 15px 20px 0;
+}
+
+.lifeservice .hot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+    background: url(../images/jian.png) no-repeat;
+}
+
+.bill {
+    background: url(../images/icons.png) no-repeat -19px -17px;
+}
+
+.ticket {
+    background: url(../images/icons.png) no-repeat -79px -17px;
+}
+
+.movie {
+    background: url(../images/icons.png) no-repeat -142px -18px;
+}
+
+.game {
+    background: url(../images/icons.png) no-repeat -206px -17px;
+}
+
+.raffle {
+    background: url(../images/icons.png) no-repeat -15px -88px;
+}
+
+.gas {
+    background: url(../images/icons.png) no-repeat -78px -88px;
+}
+
+.hotel {
+    background: url(../images/icons.png) no-repeat -141px -88px;
+}
+
+.train {
+    background: url(../images/icons.png) no-repeat -206px -88px;
+}
+
+.donation {
+    background: url(../images/icons.png) no-repeat -15px -159px;
+}
+
+.financing {
+    background: url(../images/icons.png) no-repeat -77px -159px;
+}
+
+.gift {
+    background: url(../images/icons.png) no-repeat -143px -159px;
+}
+
+.loan {
+    background: url(../images/icons.png) no-repeat -205px -159px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+
+/* recommend part start */
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 10px;
+}
+
+.recom_hd {
+    width: 205px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_hd h3 {
+    color: #fff;
+    padding-top: 5px;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3):after {
+    /* 最后一个li没有竖线 就前边3个有 所以是往前选是-n+3 */
+    /* after伪元素属于行内元素没有大小 但是给了定位也无所谓 */
+    content: '';
+    top: 10px;
+    right: 0;
+    position: absolute;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* recommend part end */
