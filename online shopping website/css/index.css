@@ -234,3 +234,80 @@
 
 
 /* recommend part end */
+
+
+/* floor part start */
+
+.floor {
+    margin-top: 30px;
+}
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 15px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.box_hd ul li {
+    float: left;
+    line-height: 30px;
+}
+
+.box_hd ul li a {
+    padding: 0 15px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.box_bd img:hover {
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.tab_list_item>div {
+    /* 亲儿子 */
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 105px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    padding-left: 5px;
+}
+
+.col_329 {
+    width: 329px;
+    background-color: #aed6d8;
+    text-align: center;
+}
+
+.col_221 {
+    width: 221px;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+
+/* floor part end */
