@@ -165,7 +165,7 @@
 }
 
 .nav .dropdown .dd {
-    display: block;
+    display: none;
     width: 100%;
     height: 465px;
     background-color: #c81623;
@@ -178,6 +178,7 @@
     line-height: 31px;
     margin-left: 2px;
     padding-left: 10px;
+    transition: all 0.3s;
 }
 
 .dropdown .dd ul li::after {
@@ -196,7 +197,8 @@
 }
 
 .dropdown .dd ul li:hover {
-    background-color: #FFF;
+    background-color: #edeaea;
+    padding-left: 12px;
 }
 
 .dropdown .dd ul li:hover a {
