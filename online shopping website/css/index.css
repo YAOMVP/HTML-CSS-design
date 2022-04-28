@@ -311,3 +311,34 @@
 
 
 /* floor part end */
+
+
+/* fixed elevator part start */
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    /* 先走版心的50%，再走浏览器宽度的一半 再走自己的距离 然后可在稍稍加10px的距离避免拥挤*/
+    margin-left: -679px;
+    left: 50%;
+    width: 69px;
+    background-color: #fff;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 550;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+
+/* fixed elevator part end */
