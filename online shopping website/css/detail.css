@@ -51,6 +51,14 @@
     border: 1px solid #c81623;
 }
 
+.item {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 .arrow_prev,
 .arrow_next {
     position: absolute;
@@ -256,6 +264,7 @@
     border-bottom: 1px solid #ccc;
     text-align: center;
     line-height: 33px;
+    cursor: pointer;
 }
 
 .tab_list .current {
@@ -264,24 +273,33 @@
     color: #c81623;
 }
 
-.first_tab {
-    width: 103px;
-}
-
-.second_tab {
+.list_tab {
     width: 103px;
     border-left: 1px solid #ccc;
 }
 
-.tab_con {
+.tab_content {
     padding: 0 10px;
 }
 
-.tab_con li {
+.tab {
+    display: none;
+}
+
+.appear {
+    display: block;
+}
+
+.tab_content li {
     border-bottom: 1px solid #ccc;
 }
 
-.tab_con li h5 {
+.tab_content li img {
+    width: 180px;
+    height: 137px;
+}
+
+.tab_content li h5 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
