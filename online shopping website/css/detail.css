@@ -24,6 +24,7 @@
 .preview_img {
     height: 400px;
     border: 1px solid #ccc;
+    cursor: pointer;
 }
 
 .peview_list {
@@ -146,6 +147,18 @@
     color: #fff;
 }
 
+.imgs {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.summary dd:hover a {
+    color: #666;
+}
+
 .summary_support,
 .choose_color,
 .choose_version,
@@ -215,6 +228,11 @@
     margin-left: 10px;
 }
 
+.addcar:hover {
+    color: #fff;
+    font-size: 19px;
+}
+
 .add {
     top: 0;
     right: 0;
@@ -223,7 +241,6 @@
 .reduce {
     bottom: 0;
     right: 0;
-    cursor: not-allowed;
 }
 
 .add,

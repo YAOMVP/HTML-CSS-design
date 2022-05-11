@@ -13,7 +13,6 @@
     <link rel="stylesheet " href="css/common.css ">
     <link rel="stylesheet" href="font/css/all.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="js/detail.js">
 
 </head>
 
@@ -85,16 +84,33 @@
         <div class="search">
             <input type="text" placeholder="Search for anything">
             <button>Search</button>
+            <ul class="result-list">
+                <li>
+                    <a href="list.html">Hi Mate</a>
+                </li>
+                <li>
+                    <a href="list.html">Nice to meet you</a>
+                </li>
+                <li>
+                    <a href="list.html">How are you</a>
+                </li>
+                <li>
+                    <a href="list.html">Good thanks</a>
+                </li>
+                <li>
+                    <a href="list.html">Have a good one</a>
+                </li>
+            </ul>
         </div>
         <!-- hotwords -->
         <div class="hotwords">
-            <a href="jsvascript:;" class="style_red">Smart Home</a>
-            <a href="jsvascript:;">Video Games</a>
-            <a href="jsvascript:;">Grocery</a>
-            <a href="jsvascript:;">Furniture</a>
-            <a href="jsvascript:;">Toys</a>
-            <a href="jsvascript:;">Storage</a>
-            <a href="jsvascript:;">Gift Cards</a>
+            <a href="javascript:;" class="style_red">Smart Home</a>
+            <a href="javascript:;">Video Games</a>
+            <a href="javascript:;">Grocery</a>
+            <a href="javascript:;">Furniture</a>
+            <a href="javascript:;">Toys</a>
+            <a href="javascript:;">Storage</a>
+            <a href="javascript:;">Gift Cards</a>
         </div>
         <div class="shopcar">
             <i class="cart_icon fas fa-cart-arrow-down"></i> My Cart
@@ -914,6 +930,33 @@
     </footer>
     <!-- --------------------footer part end---------------------------->
 
+
+
+    <script>
+        //搜索栏获得焦点
+        let input = document.querySelector('input')
+        let list = document.querySelector('.result-list')
+        let hotwords = document.querySelector('.hotwords')
+
+        //获得光标事件
+        input.addEventListener('mouseenter', function() {
+                //显示下拉菜单
+                list.style.display = 'block'
+                    //文本框变色
+                this.classList.add('search_color')
+                    // hotwords隐藏
+                hotwords.style.display = 'none'
+
+            })
+            //失去焦点事件
+        input.addEventListener('mouseleave', function() {
+            //隐藏下拉菜单
+            list.style.display = 'none'
+                // hotwords显示
+            hotwords.style.display = 'block'
+
+        })
+    </script>
 </body>
 
 </html>
