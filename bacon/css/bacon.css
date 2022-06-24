@@ -1,0 +1,16 @@
+h1 {
+    color: purple;
+}
+
+img:hover {
+    background-color: yellow;
+}
+
+.broccoli {
+    background-color: pink;
+    border-radius: 100%;
+}
+
+.bacon {
+    background-color: green;
+}
