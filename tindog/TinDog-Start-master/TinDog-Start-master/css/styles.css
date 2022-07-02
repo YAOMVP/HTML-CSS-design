@@ -4,8 +4,13 @@
     box-sizing: border-box
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 #title {
@@ -22,6 +27,7 @@ body {
 h1 {
     font-size: 3rem;
     line-height: 1.5;
+    text-align: left;
 }
 
 
@@ -69,7 +75,6 @@ a.navbar-brand {
 #features {
     position: relative;
     padding: 200px 0;
-    text-align: center;
     background-color: #fff;
     z-index: 999;
 }
@@ -104,7 +109,6 @@ a.navbar-brand {
 
 #testimonials {
     padding: 5% 25%;
-    text-align: center;
     background-color: #EF8172;
     color: #fff;
 }
@@ -130,7 +134,6 @@ a.navbar-brand {
 
 #press {
     background-color: #EF8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -157,4 +160,64 @@ a.navbar-brand {
 #pricing .btn {
     padding: 10px 100px;
     font-family: 'Montserrat-Regular', sans-serif;
+}
+
+
+/* Call to Action  */
+
+#cta {
+    height: 380px;
+    background-color: #ff4c68;
+}
+
+#cta h3 {
+    padding: 80px 480px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+#cta .btn {
+    margin: 0 10px;
+}
+
+
+/* footer */
+
+#footer {
+    margin-top: 100px;
+    background-color: #fff;
+}
+
+#footer i {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+#footer i:hover {
+    color: #EF8172;
+}
+
+#footer p {
+    margin-top: 20px;
+    color: #8f8f8f;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+#footer p:hover {
+    cursor: pointer;
+    color: #EF8172;
+}
+
+@media screen and (max-width:1228px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        width: 250px;
+        height: 500px;
+        position: static;
+        transform: rotate(0);
+    }
 }
